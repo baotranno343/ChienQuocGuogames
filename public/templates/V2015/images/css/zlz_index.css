@@ -1,0 +1,612 @@
+﻿/*
+* CSS Document
+* @hzwangshuyan@corp.netease.com
+* @2015/3/24.
+*/
+/* reset */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu,
+i {
+	margin: 0;
+	padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th {
+	text-align: left;
+	font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+	border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+	font-style: normal;
+}
+[hidefocus],
+summary {
+	outline: 0;
+}
+li {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+	font-size: 100%;
+}
+sup,
+sub {
+	font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+	font-family: inherit;
+}
+q:before,
+q:after {
+	content: none;
+}
+textarea {
+	overflow: auto;
+	resize: none;
+}
+label,
+summary {
+}
+a,
+button {
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+	font-weight: bold;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+	text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+	font: 14px/1.14 "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, Tahoma, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB,
+		Microsoft Yahei, Simhei, sans-serif;
+	color: #333;
+	outline: 0;
+}
+
+/* function */
+.f-cb:after,
+.f-cbli li:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	content: ".";
+}
+.f-cb,
+.f-cbli li {
+	zoom: 1;
+}
+.f-ib {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.f-dn {
+	display: none;
+}
+.f-db {
+	display: block;
+}
+.f-fl {
+	float: left;
+}
+.f-fr {
+	float: right;
+}
+.f-pr {
+	position: relative;
+}
+.f-pa {
+	position: absolute;
+}
+.f-prz {
+	position: relative;
+	zoom: 1;
+}
+.f-oh {
+	overflow: hidden;
+}
+.f-ff0 {
+	font-family: arial, \5b8b\4f53;
+}
+.f-ff1 {
+	font-family: "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53;
+}
+.f-fs1 {
+	font-size: 12px;
+}
+.f-fs2 {
+	font-size: 14px;
+}
+.f-fwn {
+	font-weight: normal;
+}
+.f-fwb {
+	font-weight: bold;
+}
+.f-tal {
+	text-align: left;
+}
+.f-tac {
+	text-align: center;
+}
+.f-tar {
+	text-align: right;
+}
+.f-vam,
+.f-vama * {
+	vertical-align: middle;
+}
+.f-wsn {
+	word-wrap: normal;
+	white-space: nowrap;
+}
+.f-pre {
+	overflow: hidden;
+	text-align: left;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.f-wwb {
+	white-space: normal;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.f-ti {
+	overflow: hidden;
+	text-indent: -30000px;
+}
+.f-ti2 {
+	text-indent: 2em;
+}
+.f-lhn {
+	line-height: normal;
+}
+.f-tdu,
+.f-tdu:hover {
+	text-decoration: underline;
+}
+.f-tdn,
+.f-tdn:hover {
+	text-decoration: none;
+}
+.f-toe {
+	overflow: hidden;
+	word-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.f-csp {
+}
+.f-csd {
+}
+.f-csh {
+	cursor: help;
+}
+.f-csm {
+	cursor: move;
+}
+.f-usn {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.f-ma {
+	margin-left: auto;
+	margin-right: auto;
+}
+body {
+	background-color: #000;
+}
+
+.m-zlzlist big,
+.m-nav {
+	background: url(../sprite-index.png) 0px 0px no-repeat;
+}
+
+.g-wrap {
+	width: 100%;
+	min-width: 960px;
+	max-width: 1920px;
+	background-color: #e3e8eb;
+}
+.g-head {
+	width: 100%;
+	height: 294px;
+	background: url(../headimg.jpg) center top no-repeat;
+}
+.g-body {
+	width: 960px;
+	position: relative;
+}
+.g-sidenav {
+	width: 125px;
+}
+.g-sidenav-fixed {
+	position: fixed;
+	top: 0;
+}
+.g-content {
+	width: 830px;
+}
+
+.u-logo {
+	position: absolute;
+	top: -290px;
+	left: -20px;
+}
+
+.m-notice {
+	height: 55px;
+	line-height: 55px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	border-bottom: 4px solid #4d3319;
+}
+.m-notice a {
+	margin: 15px;
+	color: #333333;
+}
+.m-notice a:hover {
+	text-decoration: underline;
+}
+
+.m-zlzlist {
+	width: 100%;
+	padding-bottom: 75px;
+}
+.m-zlzlist dd {
+	padding: 30px 0 30px 60px;
+	width: 770px;
+	border-bottom: 1px dotted #93864b;
+}
+.m-zlzlist hgroup {
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+	color: #93864b;
+}
+.m-zlzlist big {
+	display: block;
+	position: absolute;
+	left: -60px;
+	top: 10px;
+	width: 41px;
+	height: 41px;
+	overflow: hidden;
+	text-indent: 60px;
+}
+.m-zlzlist big.title1 {
+	background-position: 0px 0px;
+}
+.m-zlzlist big.title2 {
+	background-position: 0px -43px;
+}
+.m-zlzlist big.title3 {
+	background-position: 0px -87px;
+}
+.m-zlzlist big.title4 {
+	background-position: 0px -130px;
+}
+.m-zlzlist big.title5 {
+	background-position: 0px -174px;
+}
+.m-zlzlist big.title6 {
+	background-position: 0px -217px;
+}
+.m-zlzlist big.title7 {
+	background-position: 0px -261px;
+}
+.m-zlzlist big.title8 {
+	background-position: 0px -304px;
+}
+.m-zlzlist big.title9 {
+	background-position: 0px -348px;
+}
+.m-zlzlist big.title10 {
+	background-position: 0px -391px;
+}
+.m-zlzlist h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+.m-zlzlist small {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-indent: 5px;
+	vertical-align: -3px;
+}
+.m-zlzlist li {
+	line-height: 24px;
+}
+.m-zlzlist a {
+	color: #666;
+	margin: 0 13px;
+}
+.m-zlzlist a:hover {
+	border-bottom: 1px solid #666;
+}
+.m-zlzlist span {
+	color: #999;
+	margin: 0 18px;
+}
+
+.m-nav {
+	position: relative;
+	margin-top: 10px;
+	background-position: -12px -437px;
+}
+.m-nav a,
+.m-nav b {
+	display: block;
+}
+.m-nav a {
+	height: 32px;
+	line-height: 32px;
+	padding-left: 24px;
+	color: #666666;
+}
+.m-nav a.active,
+.m-nav a:hover {
+	color: #333;
+	font-weight: bold;
+}
+.m-nav .current {
+	position: absolute;
+	top: 12px;
+	left: 4px;
+	width: 30px;
+	height: 300px;
+	background: url(../dot.png) 0 0 no-repeat;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.u-closeBtn {
+	background: url(../sprite_zlz_num.png) 9999px 9999px no-repeat;
+}
+.u-mask {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: #000\9;
+	filter: Alpha(opacity=80);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.u-mask-body {
+	display: none;
+	z-index: 30;
+}
+.m-opendiv {
+	position: absolute;
+	z-index: 100;
+	width: 780px;
+	height: 334px;
+}
+.m-opendiv .cnt {
+	width: 741px;
+	height: 334px;
+	background-color: #fff;
+}
+
+.u-closeBtn {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-position: -9px -1230px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.u-closeBtn:hover {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.u-closeBtn {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+/*底部*/
+#cyou_bottom {
+	width: 100%;
+	min-width: 980px;
+	height: 80px;
+	padding: 10px 0;
+	zoom: 1;
+}
+#cyou_bottom a {
+	text-decoration: none;
+}
+#cyou_bottom img {
+	display: inherit;
+}
+.cyou_bottom_wraper {
+	border: none;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0 auto;
+}
+.cyou_bottom_wraper td {
+	height: 77px;
+	vertical-align: middle;
+}
+.cyou_bottom_left {
+	text-align: right;
+}
+.cyou_bottom_left a,
+.cyou_bottom_right a {
+	height: 52px;
+	display: inline-block;
+	zoom: 1;
+	text-align: left;
+}
+.cyou_bottom_cont {
+	text-align: left;
+	padding: 0 10px;
+}
+.cyou_bottom_cont p {
+	white-space: nowrap;
+}
+.cyou_bottom_cont p .uppercase {
+	text-transform: uppercase;
+	font-size: 11px;
+	-webkit-text-size-adjust: none;
+}
+.cyou_bottom_left,
+.cyou_bottom_right {
+	padding: 0 5px;
+}
+#cyou_bottom {
+	background: #f0f0f0 url(../../images/nav_bg.png) no-repeat center -55px;
+	padding-top: 20px;
+}
+#cyou_bottom a {
+	color: #8e8e8e;
+}
+#cyou_bottom a:hover {
+	color: #484848;
+}
+#cyou_bottom .highlight {
+	color: #484848;
+}
+#cyou_bottom,
+.cyou_bottom_cont p {
+	font: normal 12px/22px Tahoma, Geneva, sans-serif;
+	color: #8e8e8e;
+}
+.cyou_bottom_cont p {
+	padding-left: 1px;
+}
+.cyou_bottom_right a {
+	background-image: url(../../images/cyou_copyright_sprite.png);
+	background-repeat: no-repeat;
+	height: 48px;
+}
+#cyou_bottom {
+	background-color: #181818;
+	border-top-color: #242424;
+}
+#cyou_bottom a {
+	color: #535353;
+}
+#cyou_bottom a:hover {
+	color: #767676;
+}
+#cyou_bottom .highlight {
+	color: #767676;
+}
+#cyou_bottom,
+.cyou_bottom_cont p {
+	color: #535353;
+}
+.cyou_bottom_cont p {
+	border-left-color: #535353;
+}
+.cyou_bottom_left a {
+	background-image: url("../../images/logo_dark.png");
+}

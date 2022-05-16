@@ -1,0 +1,15 @@
+.xtl_logo_bg,
+.xtl_logo_lk a {
+    position: absolute;
+    width: 240px;
+    height: 96px;
+}
+.xtl_logo_bg {
+    z-index: 9;
+    background: url("../logo-1.png");
+    _background: 0;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/logo.png',sizingMethod='scale');
+}
+.xtl_logo_lk a {
+    z-index: 11;
+}

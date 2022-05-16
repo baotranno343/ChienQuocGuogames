@@ -1,0 +1,1620 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Chiến Quốc GuoGames</title>
+    <link href="favicon.ico" rel="shortcut icon" />
+    <!--[if IE 6
+      ]><script>
+        try {
+          document.execCommand("BackgroundImageCache", false, true);
+        } catch (e) {}
+      </script><!
+    [endif]-->
+
+    <script src="templates/V2015/images/js/html5.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="templates/V2015/images/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="templates/V2015/images/css/global_201402.css?2021"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="templates/V2015/images/css/main.css?2021"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="templates/V2015/images/css/panel-reg.css"
+    />
+    <style type="text/css" id="PageHead" siteurl="chienquoc.guogames.com">
+      body,
+      div,
+      dl,
+      dt,
+      dd,
+      ul,
+      ol,
+      li,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      fieldset,
+      img {
+        border: 0;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      :focus {
+        outline: 0;
+      }
+      #cyou_top_flash {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 55px;
+        z-index: 9999;
+      }
+      #cyou_top_close {
+        position: absolute;
+        display: block;
+        width: 59px;
+        height: 28px;
+        top: 20px;
+        left: 50%;
+        margin-left: 400px;
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/close.png)
+          no-repeat;
+      }
+      .cyou_top_animate_elem {
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease;
+        -moz-animation-timing-function: ease;
+        -ms-animation-timing-function: ease;
+        -o-animation-timing-function: ease;
+        animation-timing-function: ease;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .cyou_top_tipsbox b,
+      .cyou_top_categroylist a,
+      .cyou_top_webgame,
+      .cyou_top_li_icon,
+      .cyou_top_gm_select_icon {
+        background-image: url(http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/cyou_sprite.png);
+        background-repeat: no-repeat;
+      }
+      #cyou_top {
+        position: relative;
+        width: 100%;
+        height: 55px;
+        background: url(http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/nav_bg.png)
+          no-repeat center top;
+        z-index: 99;
+        min-width: 980px;
+      }
+      #cyou_top a,
+      #cyou_bottom a {
+        text-decoration: none;
+      }
+      #cyou_top_main {
+        width: 980px;
+        height: 50px;
+        margin: 0 auto;
+        color: #4a4a4a;
+        font-family: "宋体";
+        font-size: 12px;
+      }
+      .cyou_top_logo,
+      .cyou_top_nav,
+      .cyou_top_ads {
+        position: relative;
+        z-index: 2;
+      }
+      .cyou_top_logo a {
+        display: block;
+        float: left;
+        width: 115px;
+        height: 36px;
+        text-indent: -9999em;
+      }
+      .cyou_top_logo,
+      .cyou_top_ads {
+        float: left;
+        width: auto;
+        height: 50px;
+      }
+      .cyou_top_logo {
+        width: auto;
+        height: 36px;
+        margin-top: 6px;
+        padding-right: 13px;
+      }
+      .cyou_top_ads {
+        position: static;
+        width: 240px;
+        height: 50px;
+        padding-left: 30px;
+        text-align: center;
+        z-index: 1;
+        overflow: hidden;
+      }
+      .cyou_top_ads a {
+        display: block;
+        height: 50px;
+        margin: 0 auto;
+        line-height: 0;
+        font-size: 0;
+      }
+      .cyou_top_ads_big {
+        display: none;
+        position: absolute;
+        margin-left: -110px;
+        top: 0;
+      }
+      .cyou_top_nav {
+        float: right;
+        height: 41px;
+      }
+      .cyou_top_nav_li {
+        display: block;
+        position: relative;
+        float: left;
+        width: auto;
+        padding: 0 10px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .cyou_pingtai_rig_bor_reg {
+        border-right: solid 1px #dbdbdb;
+      }
+      #cyou_top_main .cyou_top_nav_li_logined {
+        width: auto;
+        line-height: 50px;
+        border-right: none;
+        display: none;
+      }
+      .cyou_top_nav_li a {
+        font-family: "宋体";
+        font-size: 13px;
+      }
+      #cyou_top_main .cyou_top_nav_li_logined a {
+        background-color: #666;
+        color: #fff;
+        padding: 3px 5px;
+      }
+      #cyou_top_main .cyou_top_nav_li_logined a:hover {
+        color: #fff;
+      }
+      .cyou_top_pingtai {
+        width: auto;
+        padding: 0 10px;
+      }
+      .cyou_top_pingtai a {
+        line-height: 40px;
+      }
+      .cyou_top_reg {
+        color: 8dc420;
+      }
+      .cyou_top_arrow {
+        position: absolute;
+        background: #f2f2f2;
+        width: 112px;
+        height: 6px;
+        line-height: 6px;
+        right: -1px;
+        top: -6px;
+        font-size: 0px;
+        border-right: solid 1px #bbb;
+        border-left: solid 1px #bbb;
+      }
+      .cyou_top_game_list .cyou_top_arrow {
+        top: -5px;
+        z-index: 10;
+      }
+      #cyou_top_service .cyou_top_lists {
+        background: #fcfcfc;
+      }
+      .cyou_top_tipsbox {
+        _display: inline;
+        float: left;
+        width: 100%;
+        padding: 0;
+        line-height: 0;
+        font-size: 0;
+      }
+      .cyou_top_tipsbox b {
+        display: block;
+        background-position: -116px -125px;
+        line-height: 50px;
+        font-size: 12px;
+        font-weight: normal;
+      }
+      .cyou_top_tipsbox:hover b,
+      .cyou_top_tipsbox_clicked b {
+        background-position: -116px -64px;
+        background-color: #f2f2f2;
+        color: #681683;
+      }
+      #cyou_top_tips_gm .cyou_top_tipsbox:hover b,
+      #cyou_top_tips_gm .cyou_top_tipsbox_clicked b {
+        background-position: -148px -64px;
+        background-color: #f2f2f2;
+        color: #681683;
+      }
+      #cyou_top_tips_gm {
+        width: 82px;
+      }
+      #cyou_top_tips_gm .cyou_top_tipsbox b {
+        background-position: -148px -125px;
+      }
+      #cyou_top_gm_select .cyou_top_arrow {
+        width: 82px;
+      }
+      #cyou_top_gm_select .cyou_top_lists a {
+        display: block;
+        width: 82px;
+        padding-left: 12px;
+        height: 30px;
+        text-align: left;
+        line-height: 30px;
+        background: #f2f2f2;
+      }
+      #cyou_top_gm_select .cyou_top_lists a:hover .cyou_top_gm_select_icon {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+      .cyou_top_gm_select_icon {
+        display: inline-block;
+        float: left;
+        height: 18px;
+        margin: 6px 3px 0 0;
+        *zoom: 1;
+        transition: transform 0.4s ease-out 0s;
+        width: 18px;
+      }
+      #cyou_top_gm_select .cyou_top_gm_icon_a {
+        width: 18px;
+        height: 18px;
+        float: left;
+        background-position: 0 -129px;
+      }
+      #cyou_top_gm_select .cyou_top_gm_icon_b {
+        width: 18px;
+        height: 18px;
+        float: left;
+        background-position: 0 -148px;
+      }
+      #cyou_top_gm_select .cyou_top_gm_icon_c {
+        width: 18px;
+        height: 18px;
+        float: left;
+        background-position: 0 -167px;
+      }
+      #cyou_top_gm_select .cyou_top_lists .cyou_top_gm_white {
+        background: #fff;
+        border-top: solid 1px #bbbbbb;
+      }
+      .cyou_top_listbox h2 {
+        display: block;
+        height: 32px;
+        border-bottom: 1px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
+        text-indent: 47px;
+        background: #f2f2f2
+          url(http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/service_tit.png)
+          no-repeat;
+        color: #4a4a4a;
+        font: bold 12px/32px Tahoma, Geneva, sans-serif;
+        text-align: left;
+      }
+      .cyou_top_lists {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: -1px;
+        width: auto;
+        background: #f2f2f2;
+        border: solid 1px #bbbbbb;
+      }
+      #cyou_top_games .cyou_top_lists {
+        _width: 740px;
+        _zoom: 1;
+      }
+      #cyou_top_service .cyou_top_lists {
+        right: -1px;
+        width: auto;
+      }
+      .cyou_top_categroylist a {
+        display: block;
+        float: left;
+        width: 112px;
+        height: 42px;
+        line-height: 41px;
+        color: #4a4a4a;
+        font-size: 12px;
+        text-align: left;
+        text-indent: 15px;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+      #cyou_top_main .cyou_top_glist a.imp {
+        color: #eb5122;
+      }
+      #cyou_top_main .cyou_top_glist a:hover,
+      #cyou_top_main .cyou_top_categroylist a:hover,
+      #cyou_top_main .cyou_top_lists_wrap a.cyou_top_games_icon_clicked {
+        color: #681683;
+      }
+      #cyou_top_service .cyou_top_listbox {
+        width: 328px;
+        *zoom: 1;
+        overflow: hidden;
+      }
+      #cyou_top_service .cyou_top_categroylist {
+        float: left;
+        width: 336px;
+      }
+      #cyou_top_service .cyou_service_tit0 {
+        background-position: 22px 7px;
+      }
+      #cyou_top_service .cyou_service_tit1 {
+        background-position: 22px -33px;
+      }
+      #cyou_top_service .cyou_service_tit2 {
+        background-position: 22px -73px;
+      }
+      #cyou_top_service .cyou_service_tit3 {
+        background-position: 22px -113px;
+      }
+      #cyou_top_service .cyou_service_tit4 {
+        background-position: 22px -153px;
+      }
+      #cyou_top_service .cyou_top_categroylist a {
+        background-position: 0px -60px;
+        height: 34px;
+        line-height: 34px;
+      }
+      #cyou_top_service .cyou_top_categroylist .cyou_service_cate_last a {
+        height: 33px;
+        line-height: 33px;
+      }
+      .cyou_top_tips {
+        width: 112px;
+        padding: 0px;
+        border: 1px solid #e1e1e1;
+        border-bottom: none;
+        border-top: none;
+        margin-left: -1px;
+      }
+      .active_bor {
+        border-color: #bbb;
+        z-index: 10;
+      }
+      .cyou_top_li_icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin: 11px 5px 0 0;
+        *zoom: 1;
+        float: left;
+        -webkit-transition: -webkit-transform 0.4s ease-out;
+        -moz-transition: -moz-transform 0.4s ease-out;
+        transition: transform 0.4s ease-out;
+      }
+      .cyou_top_nav_li a:hover .cyou_top_li_icon {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+      .cyou_top_login_icon {
+        background-position: -89px 0;
+      }
+      .cyou_top_reg_icon {
+        background-position: -139px 0;
+      }
+      .cyou_top_pay_icon {
+        background-position: -189px 0;
+      }
+      .cyou_top_jia_icon {
+        background-position: -164px 0;
+      }
+      .cyou_top_gm_icon {
+        background-position: -164px 0;
+      }
+      .cyou_top_login_icon {
+        background-position: -114px 0;
+      }
+      .cyou_top_dropshow {
+        position: absolute;
+        right: 4px;
+        top: 5px;
+        width: 867px;
+        height: 110px;
+        border-bottom: solid 1px #bbb;
+        background: #bbbbbb 1px 1px no-repeat;
+      }
+      .cyou_top_gameint {
+        position: absolute;
+        left: 20px;
+        top: 95px;
+        width: 200px;
+        line-height: 22px;
+        color: #ffffff;
+        font-size: 12px;
+        text-align: left;
+        display: none;
+      }
+      .cyou_top_webgame {
+        display: block;
+        position: absolute;
+        bottom: -27px;
+        right: -1px;
+        width: 335px;
+        height: 25px;
+        border: solid 1px #bbb;
+        line-height: 25px;
+        color: #7256ff;
+        font-size: 12px;
+        text-align: center;
+        text-indent: 15px;
+        background-position: -130px -32px;
+        background: none;
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      .cyou_top_webgame:hover {
+        color: #676868;
+      }
+      #cyou_top_main a {
+        color: #333333;
+      }
+      #cyou_top_main .cyou_top_webgame {
+        color: #7256ff;
+      }
+      #cyou_top_main a:hover {
+        color: #681683;
+      }
+      #cyou_top_main .cyou_top_reg a:hover {
+        color: #681683;
+      }
+      #cyou_top_main .cyou_top_recharge a:hover {
+        color: #681683;
+      }
+      #cyou_top_main .cyou_top_gm a:hover {
+        color: #681683;
+      }
+      .cyou_top_logo a,
+      .cyou_bottom_left a {
+        background-image: url("templates/V2015/images/logo-white.png");
+        background-repeat: no-repeat;
+      }
+      #cyou_bottom {
+        width: 100%;
+        min-width: 980px;
+        height: 80px;
+        padding: 10px 0;
+        zoom: 1;
+      }
+      #cyou_bottom a {
+        text-decoration: none;
+      }
+      .cyou_bottom_wraper {
+        border: none;
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0 auto;
+      }
+      .cyou_bottom_wraper td {
+        height: 77px;
+        vertical-align: middle;
+      }
+      .cyou_bottom_left {
+        text-align: right;
+      }
+      .cyou_bottom_left a,
+      .cyou_bottom_right a {
+        height: 52px;
+        display: inline-block;
+        zoom: 1;
+        text-align: left;
+      }
+      .cyou_bottom_cont {
+        text-align: left;
+        padding: 0 10px;
+      }
+      .cyou_bottom_cont p {
+        white-space: nowrap;
+      }
+      .cyou_bottom_cont p .uppercase {
+        text-transform: uppercase;
+        font-size: 11px;
+        -webkit-text-size-adjust: none;
+      }
+      .cyou_bottom_left,
+      .cyou_bottom_right {
+        padding: 0 5px;
+      }
+      #cyou_bottom {
+        background: #f0f0f0
+          url(http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/nav_bg.png)
+          no-repeat center -55px;
+        padding-top: 20px;
+      }
+      #cyou_bottom a {
+        color: #8e8e8e;
+      }
+      #cyou_bottom a:hover {
+        color: #484848;
+      }
+      #cyou_bottom .highlight {
+        color: #484848;
+      }
+      #cyou_bottom,
+      .cyou_bottom_cont p {
+        font: normal 12px/22px Tahoma, Geneva, sans-serif;
+        color: #8e8e8e;
+      }
+      .cyou_bottom_cont p {
+        padding-left: 1px;
+      }
+      .cyou_bottom_cont p .in {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+      }
+      .cyou_bottom_cont p .in img {
+        float: left;
+        margin-right: 4px;
+      }
+      .cyou_bottom_right a {
+        background-image: url(http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/cyou_copyright_sprite.png);
+        background-repeat: no-repeat;
+        height: 48px;
+      }
+      .cyou_top_game_list {
+        display: none;
+        width: 876px;
+        height: 382px;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+      }
+      .cyou_top_lists_wrap {
+        position: absolute;
+        top: 0px;
+        right: -1px;
+        width: 638px;
+        height: 255px;
+        border: solid 1px #dbdbdb;
+        border-left: none;
+        background: #fff;
+      }
+      .tyou_top_gtype {
+        width: 638px;
+        height: 382px;
+        position: relative;
+      }
+      .cyou_top_tynum {
+        width: 290px;
+        position: absolute;
+      }
+      .cyou_top_type1 {
+        top: 2px;
+        left: 11px;
+      }
+      .cyou_top_type2 {
+        top: 2px;
+        left: 335px;
+      }
+      .cyou_top_type3 {
+        top: 97px;
+        left: 10px;
+      }
+      .cyou_top_type4 {
+        top: 97px;
+        left: 335px;
+      }
+      .cyou_top_type5 {
+        width: 616px;
+        top: 170px;
+        left: 10px;
+      }
+      .cyou_top_ty_tit {
+        line-height: 30px;
+        font-size: 15px;
+        text-align: left;
+        color: #aaa;
+        font-weight: bold;
+        border-bottom: dashed 1px #d6d6d6;
+      }
+      .cyou_top_glist {
+        padding-top: 4px;
+        height: 50px;
+        position: relative;
+        text-align: left;
+      }
+      .cyou_top_glist dd {
+        display: inline;
+        *zoom: 1;
+        position: relative;
+        margin-left: 1px;
+        vertical-align: top;
+        height: 24px;
+        font-size: 12px;
+        line-height: 24px;
+        color: #333333;
+        padding: 0px 18px 0px 0px;
+      }
+      .cyou_top_glist dd a {
+        color: #333333;
+      }
+      .cyou_top_glist dd a:hover {
+        color: #e47911;
+        text-decoration: underline;
+      }
+      .tyou_top_three_ad {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        border: solid 1px #d6d6d6;
+        border-top: none;
+      }
+      .tyou_top_three_ad img {
+        vertical-align: top;
+      }
+      .tyou_top_three_ad a {
+        display: block;
+        border-top: solid 1px #d6d6d6;
+      }
+      .cyou_top_change {
+        position: absolute;
+        left: 0px;
+        top: 257px;
+        width: 875px;
+        height: 124px;
+        border: solid 1px #ccc;
+        border-top: none;
+        background: #fff;
+      }
+      .cyou_top_rec {
+        position: absolute;
+        width: 877px;
+        bottom: -1px;
+        left: -1px;
+        height: 5px;
+        font-size: 0px;
+        line-height: 0px;
+        background: #ff6300;
+      }
+      .cyou_top_hot,
+      .cyou_top_new {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 41px;
+        height: 41px;
+      }
+      .cyou_top_hot {
+        z-index: 2;
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/ico_hot_p24.png);
+        _background: 0;
+        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/ico_hot_p24.png",sizingMethod="scale");
+      }
+      .cyou_top_new {
+        z-index: 2;
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/ico_new_p24.png);
+        _background: 0;
+        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.laowaner.com/Tpl/Template_www/Public/gamesitetf/v1/ico_new_p24.png",sizingMethod="scale");
+      }
+      .cyou_top_th_ad_item {
+        width: 236px;
+        height: 128px;
+        position: relative;
+      }
+      .cyou_top_gm_type1,
+      .cyou_top_gm_type2 {
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+      }
+      .cyou_top_gm_type1 {
+        width: 16px;
+        height: 16px;
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/icon_pc.png);
+      }
+      .cyou_top_gm_type2 {
+        width: 16px;
+        height: 18px;
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/icon_mob.png);
+      }
+      .cyou_top_glist em {
+        width: 10px;
+        height: 11px;
+        line-height: 0px;
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 6px;
+      }
+      .cyou_top_glist .cyou_top_h {
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/icon_h.png);
+      }
+      .cyou_top_glist .cyou_top_n {
+        background: url({$Think.config.Site_url}/Tpl/Template_www/Public/gamesitetf/v1/icon_n.png);
+      }
+      .cyou_top_jia img {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        bottom: 0;
+        z-index: 1;
+        width: 132px;
+        height: 153px;
+      }
+      .highzindex {
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page clearfix">
+      <div class="header">
+        <div class="menuNav">
+          <a href="index.htm" class="index">Trang Chủ</a>
+          <a href="news/index.htm" class="tese">Đăng Ký</a>
+          <a href="news/index.htm" class="down">Đăng Nhập</a>
+          <a href="news/index.htm" class="guide">Cộng Đồng</a>
+        </div>
+      </div>
+
+      <!--页面主体 begin-->
+      <div class="bg_content">
+        <div class="main_content clearfix">
+          <!--页面左侧主体-->
+
+          <div class="leftbar">
+            <div class="con_left download">
+              <a
+                href="special/down/index.htm"
+                class="down_btn"
+                target="_blank"
+              ></a>
+              <div class="down_link">
+                <ul>
+                  <li>
+                    <a
+                      class="dl01"
+                      href="http://www.laowaner.com/account/regcom.html"
+                      target="_blank"
+                      ><p>&nbsp;</p></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dl02"
+                      href="http://www.laowaner.com/pay.html"
+                      target="_blank"
+                      ><p>&nbsp;</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="nav_btn">
+              <a
+                href="http://www.laowaner.com/safety"
+                target="_blank"
+                title="账号安全"
+                class="guide_btn"
+                >账号安全</a
+              >
+              <a
+                href="http://www.laowaner.com/pay/fpay/game/mhzg.html"
+                target="_blank"
+                title="游戏充值"
+                class="video_btn"
+                >游戏充值</a
+              >
+              <a
+                href="http://bbs.longuxi.com/"
+                target="_blank"
+                title="玩家互动"
+                class="bbs_btn"
+                >玩家互动</a
+              >
+              <a
+                href="http://www.laowaner.com/help"
+                target="_blank"
+                title="客服专区"
+                class="com_btn"
+                >客服专区</a
+              >
+              <a target="_blank" title="经验交流" class="ser_btn">经验交流</a>
+              <a target="_blank" title="BUG提交" class="safe_btn">BUG提交</a>
+            </div>
+            <div class="line24"></div>
+          </div>
+
+          <!--rightbar-->
+          <div class="rightbar">
+            <div class="top_rightbar">
+              <div id="focus">
+                <div class="focusInner">
+                  <ul>
+                    <li>
+                      <a
+                        href="special/gift/czlb.html"
+                        target="_blank"
+                        title="五一活动"
+                      >
+                        <img
+                          src="upload/202104/1619509627.png"
+                          alt="五一活动"
+                          width="310"
+                          height="430"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="special/niunian/niufabao.html"
+                        target="_blank"
+                        title="牛年法宝"
+                      >
+                        <img
+                          src="upload/202012/1609246603.jpg"
+                          alt="牛年法宝"
+                          width="310"
+                          height="430"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="special/fywl/index.htm"
+                        target="_blank"
+                        title="战国资料片"
+                      >
+                        <img
+                          src="upload/201907/1564474839.png"
+                          alt="战国资料片"
+                          width="310"
+                          height="430"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="special/zhuanti/shouxi/index.htm"
+                        target="_blank"
+                        title="资料片"
+                      >
+                        <img
+                          src="upload/202007/1595487487.png"
+                          alt="资料片"
+                          width="310"
+                          height="430"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="special/fabao/zhnfabao.html"
+                        target="_blank"
+                        title="战国新版本"
+                      >
+                        <img
+                          src="upload/201902/1550312840.png"
+                          alt="战国新版本"
+                          width="310"
+                          height="430"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="special/features/whsw.html"
+                        target="_blank"
+                        title="王侯声望"
+                      >
+                        <img
+                          src="upload/201906/1561779937.png"
+                          alt="王侯声望"
+                          width="310"
+                          height="430"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top_news">
+                <div class="top_news_ad">
+                  <img
+                    src="templates/V2015/images/sp.gif"
+                    data-src="templates/V2015/images/main_a2.jpg?2021"
+                    width="460"
+                    height="90"
+                    onclick="showCollectgift()"
+                    style=""
+                  />
+                </div>
+                <div class="top_news_box">
+                  <ul class="top_news_tabs">
+                    <li id="tab1">
+                      <a href="javascript:void(0);" class="current"
+                        >Thông Báo</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="top_news_cont">
+                    <dl class="imp_news">
+                      <dt>
+                        <a
+                          href="news/shownews.php-1.html?lang=cn&id=1034"
+                          style="color: "
+                          target="_blank"
+                          >战国关于WPE软件公告(新)</a
+                        >
+                      </dt>
+                    </dl>
+                    <!--综合-->
+                    <div class="newscont" style="display: block">
+                      <ul style="height: 144px; overflow: hidden">
+                        <ul class="list">
+                          <li>
+                            <span class="time">2021-05-22</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-2.html?lang=cn&id=1042"
+                              title="2021-05-23例行维护公告"
+                              target="_blank"
+                              style="color: "
+                              >2021-05-23例行维护公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-17</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-1.html?lang=cn&id=1034"
+                              title="战国关于WPE软件公告(新)"
+                              target="_blank"
+                              style="color: "
+                              >战国关于WPE软件公告(新)</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-17</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-3.html?lang=cn&id=1041"
+                              title="妖影仙踪拍卖内容公告(2021-05-17)"
+                              target="_blank"
+                              style="color: "
+                              >妖影仙踪拍卖内容公告(2021-05-17)</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-14</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-4.html?lang=cn&id=1040"
+                              title="2021-05-16例行维护公告"
+                              target="_blank"
+                              style="color: "
+                              >2021-05-16例行维护公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-08</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-5.html?lang=cn&id=1039"
+                              title="2021-05-09例行维护公告"
+                              target="_blank"
+                              style="color: "
+                              >2021-05-09例行维护公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-07</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-6.html?lang=cn&id=1038"
+                              title="妖影仙踪拍卖内容公告(2021-05-10)"
+                              target="_blank"
+                              style="color: "
+                              >妖影仙踪拍卖内容公告(2021-05-10)</a
+                            >
+                          </li>
+                        </ul>
+                      </ul>
+                      <p class="more">
+                        <a href="news/index.htm" target="_blank">MORE</a
+                        ><span>+</span>
+                      </p>
+                    </div>
+                    <!--新闻-->
+                    <div class="newscont">
+                      <ul>
+                        <ul class="list">
+                          <li>
+                            <span class="time">2021-05-22</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-2.html?lang=cn&id=1042"
+                              title="2021-05-23例行维护公告"
+                              target="_blank"
+                              style="color: "
+                              >2021-05-23例行维护公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-17</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-1.html?lang=cn&id=1034"
+                              title="战国关于WPE软件公告(新)"
+                              target="_blank"
+                              style="color: "
+                              >战国关于WPE软件公告(新)</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-17</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-3.html?lang=cn&id=1041"
+                              title="妖影仙踪拍卖内容公告(2021-05-17)"
+                              target="_blank"
+                              style="color: "
+                              >妖影仙踪拍卖内容公告(2021-05-17)</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-14</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-4.html?lang=cn&id=1040"
+                              title="2021-05-16例行维护公告"
+                              target="_blank"
+                              style="color: "
+                              >2021-05-16例行维护公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-08</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-5.html?lang=cn&id=1039"
+                              title="2021-05-09例行维护公告"
+                              target="_blank"
+                              style="color: "
+                              >2021-05-09例行维护公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-05-07</span
+                            ><em class="kind_news">【公告】</em
+                            ><a
+                              href="news/shownews.php-6.html?lang=cn&id=1038"
+                              title="妖影仙踪拍卖内容公告(2021-05-10)"
+                              target="_blank"
+                              style="color: "
+                              >妖影仙踪拍卖内容公告(2021-05-10)</a
+                            >
+                          </li>
+                        </ul>
+                      </ul>
+                      <p class="more">
+                        <a
+                          href="news/news.php.html?lang=cn&class2=4"
+                          target="_blank"
+                          >MORE</a
+                        ><span>+</span>
+                      </p>
+                    </div>
+                    <!--公告-->
+                    <div class="newscont">
+                      <ul>
+                        <ul class="list">
+                          <li>
+                            <span class="time">2021-04-27</span
+                            ><em class="kind_news">【活动】</em
+                            ><a
+                              href="news/shownews.php-7.html?lang=cn&id=1035"
+                              title="战国五一活动开启公告"
+                              target="_blank"
+                              style="color: "
+                              >战国五一活动开启公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-03-31</span
+                            ><em class="kind_news">【活动】</em
+                            ><a
+                              href="news/shownews.php-8.html?lang=cn&id=1027"
+                              title="梦幻战国清明节活动开启公告"
+                              target="_blank"
+                              style="color: "
+                              >清明节活动开启公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-03-27</span
+                            ><em class="kind_news">【活动】</em
+                            ><a
+                              href="news/shownews.php-9.html?lang=cn&id=1025"
+                              title="愚人节活动开启公告"
+                              target="_blank"
+                              style="color: "
+                              >愚人节活动开启公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-02-23</span
+                            ><em class="kind_news">【活动】</em
+                            ><a
+                              href="news/shownews.php-10.html?lang=cn&id=1018"
+                              title="元宵节活动公告"
+                              target="_blank"
+                              style="color: #ff0000"
+                              >元宵节活动公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-02-13</span
+                            ><em class="kind_news">【活动】</em
+                            ><a
+                              href="news/shownews.php-11.html?lang=cn&id=1014"
+                              title="战国情人节活动开启！"
+                              target="_blank"
+                              style="color: "
+                              >战国情人节活动开启！</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-02-08</span
+                            ><em class="kind_news">【活动】</em
+                            ><a
+                              href="news/shownews.php-12.html?lang=cn&id=1011"
+                              title="金牛送吉迎新春，战国活动乐不停！"
+                              target="_blank"
+                              style="color: #ff0000"
+                              >金牛送吉迎新春，战国活动乐不停！</a
+                            >
+                          </li>
+                        </ul>
+                      </ul>
+                      <p class="more">
+                        <a
+                          href="news/news.php-1.html?lang=cn&class2=5"
+                          target="_blank"
+                          >MORE</a
+                        ><span>+</span>
+                      </p>
+                    </div>
+                    <!--媒体-->
+                    <div class="newscont">
+                      <ul>
+                        <ul class="list">
+                          <li>
+                            <span class="time">2021-03-27</span
+                            ><em class="kind_news">【新闻】</em
+                            ><a
+                              href="news/shownews.php-13.html?lang=cn&id=1024"
+                              title="充值活动线上领取功能上线"
+                              target="_blank"
+                              style="color: "
+                              >充值活动线上领取功能上线</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2017-12-03</span
+                            ><em class="kind_news">【新闻】</em
+                            ><a
+                              href="news/shownews.php-14.html?lang=cn&id=858"
+                              title="WIN10系统游戏崩溃白屏修复教程"
+                              target="_blank"
+                              style="color: "
+                              >WIN10系统游戏崩溃白屏修复教程</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2016-06-06</span
+                            ><em class="kind_news">【新闻】</em
+                            ><a
+                              href="news/shownews.php-15.html?lang=cn&id=410"
+                              title="新服征名活动开启！"
+                              target="_blank"
+                              style="color: #ff00ff"
+                              >新服征名活动开启！</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2015-08-19</span
+                            ><em class="kind_news">【新闻】</em
+                            ><a
+                              href="news/shownews.php-16.html?lang=cn&id=302"
+                              title="杜绝游戏外挂，创建绿色网游"
+                              target="_blank"
+                              style="color: #ff33ff"
+                              >杜绝游戏外挂，创建绿色网游</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2015-06-30</span
+                            ><em class="kind_news">【新闻】</em
+                            ><a
+                              href="news/shownews.php-17.html?lang=cn&id=268"
+                              title="新服征名活动奖励发放公告"
+                              target="_blank"
+                              style="color: "
+                              >新服征名活动奖励发放公告</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2015-03-18</span
+                            ><em class="kind_news">【新闻】</em
+                            ><a
+                              href="news/shownews.php.html?lang=cn&id=215"
+                              title="聚宝天下，理财有道！"
+                              target="_blank"
+                              style="color: #ff0099"
+                              >聚宝天下，理财有道！</a
+                            >
+                          </li>
+                        </ul>
+                      </ul>
+                      <p class="more">
+                        <a
+                          href="news/news.php-2.html?lang=cn&class2=98"
+                          target="_blank"
+                          >MORE</a
+                        ><span>+</span>
+                      </p>
+                    </div>
+                    <!--社区-->
+                    <div class="newscont">
+                      <ul>
+                        <ul class="list">
+                          <li>
+                            <span class="time">2021-01-25</span
+                            ><em class="kind_news">【礼包】</em
+                            ><a
+                              href="news/shownews.php-18.html?lang=cn&id=1004"
+                              title="妖影仙踪 17173媒体霸权礼包"
+                              target="_blank"
+                              style="color: "
+                              >妖影仙踪 17173媒体霸权礼包</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2021-01-22</span
+                            ><em class="kind_news">【礼包】</em
+                            ><a
+                              href="news/shownews.php-19.html?lang=cn&id=1002"
+                              title="妖影仙踪 战国媒体专属礼包"
+                              target="_blank"
+                              style="color: "
+                              >妖影仙踪 战国媒体专属礼包</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2020-07-24</span
+                            ><em class="kind_news">【礼包】</em
+                            ><a
+                              href="news/shownews.php-20.html?lang=cn&id=981"
+                              title="战国媒体专属礼包"
+                              target="_blank"
+                              style="color: "
+                              >战国媒体专属礼包</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2020-07-24</span
+                            ><em class="kind_news">【礼包】</em
+                            ><a
+                              href="news/shownews.php-21.html?lang=cn&id=980"
+                              title="战国全新17173媒体霸权礼包"
+                              target="_blank"
+                              style="color: "
+                              >战国全新17173媒体霸权礼包</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2020-01-08</span
+                            ><em class="kind_news">【礼包】</em
+                            ><a
+                              href="news/shownews.php-22.html?lang=cn&id=950"
+                              title="“逐鼠天下”媒体专属礼包"
+                              target="_blank"
+                              style="color: "
+                              >“逐鼠天下”媒体专属礼包</a
+                            >
+                          </li>
+                          <li>
+                            <span class="time">2020-01-06</span
+                            ><em class="kind_news">【礼包】</em
+                            ><a
+                              href="news/shownews.php-23.html?lang=cn&id=951"
+                              title="“逐鼠天下”17173媒体霸权礼包"
+                              target="_blank"
+                              style="color: "
+                              >“逐鼠天下”17173媒体霸权礼包</a
+                            >
+                          </li>
+                        </ul>
+                      </ul>
+                      <p class="more">
+                        <a
+                          href="news/news.php-3.html?lang=cn&class2=99"
+                          target="_blank"
+                          >MORE</a
+                        ><span>+</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line24"></div>
+
+            <div class="line24"></div>
+            <!--游戏资料 Start-->
+
+            <!--游戏资料 End-->
+            <div class="line24"></div>
+
+            <div class="line24"></div>
+            <!--合作媒体 Start-->
+
+            <!--合作媒体 End-->
+          </div>
+        </div>
+      </div>
+      <!--页面主体 end-->
+    </div>
+    <!--小调查弹窗-->
+    <div class="surveypop">
+      <div class="frame_box_vote">
+        <iframe
+          width="440"
+          scrolling="no"
+          frameborder="0"
+          src=""
+          allowtransparency="true"
+          id="survey"
+        ></iframe>
+      </div>
+      <span class="close"></span>
+    </div>
+    <!--官网找茬弹窗-->
+    <div class="surveypop_zc">
+      <div class="frame_box_vote_zc">
+        <iframe
+          width="440"
+          scrolling="no"
+          height="370"
+          frameborder="0"
+          src=""
+          allowtransparency="true"
+          id="survey_zc"
+        ></iframe>
+      </div>
+      <span class="close"></span>
+    </div>
+    <div id="cyou_bottom">
+      <table class="cyou_bottom_wraper">
+        <tbody>
+          <tr>
+            <td class="cyou_bottom_left">
+              <a
+                style="width: 200px; background-position: 0 -60px"
+                href="http://www.laowaner.com"
+                target="_blank"
+                title="老玩儿游戏网"
+              ></a>
+            </td>
+            <td class="cyou_bottom_cont">
+              <p>
+                <span class="cp_cn">Chiến Quốc Loạn Thế Anh Hùng</span
+                ><span class="cp_en uppercase">
+                  <a href="http://beian.miit.gov.cn/" target="_blank"></a>
+                </span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/jquery-1.7.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/jquery.cycle.all.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/swfobject.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/jcarousellite_1.0.1.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/popup.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/topicImg.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/jquery.inview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/global.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="templates/V2015/images/js/collectgift.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        //tab 切换
+        var tabs = function (e1, e2, e3) {
+          var e1 = $("a", e1);
+          var e2 = $(e2);
+          e1.mouseover(function () {
+            if (!$(this).hasClass("current")) {
+              e1.removeClass("current");
+              $(this).addClass("current");
+              var idx = e1.index(this);
+              e2.slideUp(0);
+              $(e2[idx]).slideDown(0);
+              $(e3).attr("href", $(this).attr("href"));
+            }
+          });
+          e1.click(function () {
+            return false;
+          });
+        };
+        tabs(".top_news_tabs li", ".newscont");
+        //tab 切换
+        var tabs_click = function (e1, e2) {
+          var e1 = $("a", e1);
+          var e2 = $(e2);
+          e1.click(function () {
+            if (!$(this).hasClass("current_t")) {
+              e1.removeClass("current_t");
+              $(this).addClass("current_t");
+              var idx = e1.index(this);
+              e2.slideUp(0);
+              $(e2[idx]).slideDown(0);
+              /*$(e3).attr('href',$(this).attr('href'));*/
+            }
+          });
+          e1.mouseover(function () {
+            return false;
+          });
+        };
+        tabs_click(".media_tabs li", ".mediacont");
+        //职业
+        var warp_num = $(".jCarouselLite li").length;
+        if (warp_num > 1) {
+          //数字取决于你要多于多少个才开始滚动
+          circulate = true;
+        } else {
+          circulate = false;
+        }
+        $(".jCarouselLite").jCarouselLite({
+          auto: 2000, //图片停留时间
+          scroll: 1, //每次滚动覆盖的图片个数
+          speed: 800, //设置速度，0是不动。其次就是数字越大 ，移动越慢。
+          vertical: false, //横向（true），竖向（false）
+          visible: 1, //显示的数量
+          circular: circulate, //是否循环
+          play: true, //停止自动播放，true则是自动播放
+          btnNext: ".next", //上一个按钮
+          btnPrev: ".prev", //下一个按钮
+        });
+        //点击搜索
+        $(".data_ser a").click(function () {
+          var leftkey = $.trim($(".data_ser input").val());
+          if (leftkey == "" || leftkey == "请输入关键词..") {
+            alert("请输入搜素关键词");
+            $(".data_ser input").val("");
+            $(".data_ser input").focus();
+            return false;
+          }
+          return false;
+          window.location.href =
+            "http://mhzg.laowaner.com/search/search.php?lang=cn&searchword=" +
+            leftkey;
+        });
+        //回车搜索
+        $(".data_ser input").focus(function () {
+          document.onkeyup = function (e) {
+            if (e == null) {
+              // ie
+              keycode = event.keyCode;
+            } else {
+              // mozilla
+              keycode = e.which;
+            }
+            if (keycode == 13) {
+              $(".data_ser a").click();
+            }
+          };
+        });
+        //监视搜索框
+        $(".data_ser input").focus(function () {
+          if ($(this).val() == "请输入关键词..") {
+            $(this).val("");
+          }
+        });
+        $(".data_ser input").blur(function () {
+          if ($(this).val() == "") {
+            $(this).val("请输入关键词..");
+          }
+        });
+        //flash按钮
+        addSWF("templates/V2015/images/down.swf", "flash_btn", "200", "220");
+        //官网找茬
+        $(".gwzc").bind("click", function () {
+          if (!$(".frame_box_vote_zc iframe").attr("src")) {
+            $(".frame_box_vote_zc iframe").attr(
+              "src",
+              "templates/V2015/images/js/surveyNew.html"
+            );
+          }
+          popup($(".surveypop_zc"));
+        });
+      });
+    </script>
+  </body>
+</html>

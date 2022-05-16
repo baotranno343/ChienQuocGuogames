@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* Author: Zs0u */
+#popout-QR {
+	width: 243px;
+	height: 464px;
+	position: fixed;
+	right: 0px;
+	bottom: 0;
+	margin-top: 0px;
+	z-index: 60;
+	background: transparent url(../qr_new_1.jpg) left top no-repeat;
+	display: none;
+}
+*html #popout-QR {
+	position: absolute;
+	margin-top: expression(
+		0 - parseInt(this.offsetHeight / 2) +
+			(TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) +
+			"px"
+	);
+}
+#popout-QR h2 {
+	width: 226px;
+	height: 40px;
+	display: block;
+	text-indent: -9999em;
+	background: none;
+}
+#popout-QR h2 a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#popout-QR .qr-iframe {
+	text-align: center;
+}
+#popout-QR .qr-get {
+	width: 97px;
+	height: 35px;
+	margin: 55px 80px 21px auto;
+	display: none;
+	text-indent: -9999em;
+}
+#popout-QR .qr-download {
+	width: 222px;
+	height: 65px;
+	position: absolute;
+	left: 11px;
+	top: 389px; /*display:none;*/
+	text-indent: -9999em;
+}
+#popout-QR .qr-close {
+	width: 18px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	text-indent: -9999em;
+}
+
+#popout-QR-default {
+	width: 102px;
+	height: 232px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin-top: 0;
+	z-index: 11;
+	text-indent: -9999em;
+	background: url(../qr_default.png) left top no-repeat;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/qr_default.png',sizingMethod='scale');
+	display: none;
+}
+*html #popout-QR-default {
+	position: absolute;
+	margin-top: expression(
+		0 - parseInt(this.offsetHeight / 2) +
+			(TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) -
+			60 + "px"
+	);
+}
+
+#tabs li.phone a {
+	background: #000;
+}

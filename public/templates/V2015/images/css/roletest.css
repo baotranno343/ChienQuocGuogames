@@ -1,0 +1,53 @@
+﻿html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu,i{margin:0;padding:0;}
+body,textarea,input,button,select,keygen,legend{font:14px/1.14  "Microsoft YaHei",\5fae\8f6f\96c5\9ed1,Tahoma,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,Simhei,sans-serif;color:#333;outline:0;}
+.m-roleTestPop{width: 741px;height:334px;background: url(../bg_1.jpg) no-repeat;}
+.m-roleTestPop .cnt .t{font-size: 32px;color: #998250;font-weight: bold;border-bottom: 1px solid #ede5da;padding-bottom: 15px;width: 656px;margin: 0 auto;text-align: center;padding-top: 40px;}
+.m-roleTestPop .startTest{}
+.m-roleTestPop .startTest p{text-align: center;}
+.m-roleTestPop .startTest .intro{margin-top: 15px;line-height: 23px;}
+.m-roleTestPop .startTest .t1{font-size: 18px;color: #97814f;margin-top: 15px;}
+.m-roleTestPop .startTest .point{display: inline-block;vertical-align: middle;background: url(../point.png) no-repeat;width: 5px;height: 5px;margin-right: 5px;}
+.m-roleTestPop .startTest .btns{text-align: center;margin-top: 28px;}
+.m-roleTestPop .startTest .startBtn{width: 314px;height: 82px;background: url(../sprite_zlz.png) no-repeat;display: inline-block;}
+.m-roleTestPop .startTest .startBtn:hover{background-position: 0 -294px;}
+
+.m-roleTestPop .testItem .question{width: 528px;margin: 0 auto;line-height: 24px;padding-top: 42px;height: 90px;}
+.m-roleTestPop .testItem .question .num{width: 41px;height: 41px;border-radius: 50%;border: 3px solid #978150;display: inline-block;line-height: 41px;font-size: 24px;font-weight: bold;text-align: center;color: #94804f;float: left;margin-right: 12px;}
+.m-roleTestPop .testItem .question .txt{font-size: 20px;font-weight: bold;line-height: 41px;color: #978150;}
+.m-roleTestPop .testItem .btns{width: 528px;margin: 0 auto;text-align: center;}
+.m-roleTestPop .testItem .btns a{display: inline-block;width: 249px;height: 81px;background: url(../sprite_zlz.png) no-repeat;}
+.m-roleTestPop .testItem .btns a.yes{margin-right: 18px;background-position: 0 -96px;}
+.m-roleTestPop .testItem .btns a.yes:hover{background-position: 0 -390px;}
+.m-roleTestPop .testItem .btns a.no{background-position: -267px -96px;}
+.m-roleTestPop .testItem .btns a.no:hover{background-position: -267px -390px;}
+
+/*圣堂A 光刃B 玉虚C 灵珑D 炎天E 流光F*/
+.m-roleTestPop{position: relative;}
+.m-roleTestPop .testResult{width: 100%;height: 100%;position: relative;}
+.m-roleTestPop .testResult.a{background: url(../images/st.jpg) no-repeat;}
+.m-roleTestPop .testResult.b{background: url(../gr.jpg) no-repeat;}
+.m-roleTestPop .testResult.c{background: url(../yx.jpg) no-repeat;}
+.m-roleTestPop .testResult.d{background: url(../ll.jpg) no-repeat;}
+.m-roleTestPop .testResult.e{background: url(../yt.jpg) no-repeat;}
+.m-roleTestPop .testResult.f{background: url(../lg.jpg) no-repeat;}
+.m-roleTestPop .testResult .t{font-size: 32px;color: #998250;font-weight: bold;padding-bottom: 15px;width: 656px;margin: 0 auto;text-align: center;padding-top: 40px;}
+.m-roleTestPop .result{width: 354px;padding-left: 97px;margin-top: 22px;}
+.m-roleTestPop .result .p1{font-size: 18px;color: #97814f;padding-bottom: 9px;border-bottom: 1px dotted #a99878;}
+.m-roleTestPop .result .p2{margin-top: 9px;}
+.m-roleTestPop .testResult .btns{text-align: left;padding-left: 97px;margin-top: 22px;}
+.m-roleTestPop .testResult .btns a{display: inline-block;width: 170px;height: 55px;background: url(../sprite_zlz.png) no-repeat;}
+.m-roleTestPop .testResult .btns a.more{background-position: 0px -197px;margin-right: 11px;}
+.m-roleTestPop .testResult .btns a.testAgain{background-position: -181px -197px;}
+.m-roleTestPop .testResult .share{position: absolute;bottom: 22px;right: 28px;}
+.m-roleTestPop .testResult .share .s{width: 28px;height: 28px;background: url(../sprite_zlz.png) no-repeat;display: inline-block;vertical-align: middle;}
+.m-roleTestPop .testResult .share .s1{background-position: -68px -640px;}
+.m-roleTestPop .testResult .share .s2{background-position: -95px -640px;}
+.m-roleTestPop .testResult .share .s3{background-position: -125px -640px;}
+.m-roleTestPop .testResult .share .s4{background-position: -40px -640px;}
+.m-roleTestPop .testResult .share .s5{background-position: -8px -640px;}
+.m-roleTestPop .cnt{background: none;}
+.m-roleTestPop .pop_mask{position: absolute;left: 0px;right: 0px;bottom: 0px;top: 0px;background: rgba(0,0,0,.9);display: none;}
+.m-roleTestPop .pop_mask img{width: 152px;height: 152px;margin: 100px auto;display: block;}
+
+
+
